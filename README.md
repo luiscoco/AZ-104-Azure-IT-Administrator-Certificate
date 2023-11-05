@@ -22,33 +22,25 @@ Quick note on Security Defaults
 
 ## Section 3: Deploy and Manage Azure compute resources
 
-We are going to start with the Azure virtual machine service
+## Section 3.1: We are going to start with the Azure virtual machine service
 
-The Virtual Machine Service
+## Section 3.2: The Virtual Machine Service
 
-Lab - Building a Windows virtual machine
+## Section 3.3: Lab - Building a Windows virtual machine
 
-Connecting to the Virtual Machine
+## Section 3.4: Connecting to the Virtual Machine
 
-Issues connecting to the machine
+## Section 3.5: Issues connecting to the machine
 
-Lab - Installing Internet Information Services
+## Section 3.6: Lab - Installing Internet Information Services
 
-Costs Associated with the Virtual Machine
+## Section 3.7: Costs Associated with the Virtual Machine
 
-Virtual Machine Types
+## Section 3.8: Virtual Machine Types
 
-### Lab - Building a Linux Virtual Machine
+## Section 3.9: Building a Linux Virtual Machine
 
-Lab - Deploying a web server on the Linux virtual machine
-
-Lab - Deploying a web server on the Linux virtual machine - Resources
-
-Lab - Deploying a Linux machine - SSH keys
-
-Deploying a web server on a Linux virtual machine (VM) in Azure involves a few key steps. Let's break it down:
-
-#### Create a Linux Virtual Machine:
+### Section 3.9.1: Create a Linux Virtual Machine:
 
 In the Azure Portal, navigate to the "Virtual machines" section.
 
@@ -56,11 +48,11 @@ Click on "Add" to create a new VM.
 
 Select the desired Linux distribution (e.g., Ubuntu, CentOS) and configure other settings like VM size, authentication, and networking.
 
-#### Connect to the Virtual Machine:
+### Section 3.9.2: Connect to the Virtual Machine:
 
 Once the VM is deployed, connect to it using an SSH client (e.g., PuTTY on Windows, Terminal on macOS/Linux).
 
-#### Update and Upgrade:
+### Section 3.9.3: Update and Upgrade:
 
 Run the following commands to ensure your system is up to date:
 
@@ -69,7 +61,7 @@ sudo apt update
 sudo apt upgrade
 ```
 
-### Install a Web Server (e.g., Apache or Nginx):
+### Section 3.9.4: Install a Web Server (e.g., Apache or Nginx):
 
 For Apache, run:
 
@@ -78,29 +70,36 @@ sudo apt install apache2
 ```
 
 For Nginx, run:
-bash
-Copy code
+
+```
 sudo apt install nginx
+```
+
 Start and Enable the Web Server:
 
 For Apache, run:
-bash
-Copy code
+
+```
 sudo systemctl start apache2
 sudo systemctl enable apache2
+```
+
 For Nginx, run:
-bash
-Copy code
+
+```
 sudo systemctl start nginx
 sudo systemctl enable nginx
-Open Firewall Ports:
+```
+
+### Section 3.9.5: Open Firewall Ports:
 
 If you have a firewall enabled, allow traffic on the web server port (default is 80 for HTTP and 443 for HTTPS).
 
 ```
 sudo ufw allow 80
 ```
-Test the Web Server:
+
+### Section 3.9.5: Test the Web Server:
 
 Open a web browser and enter the public IP address of your VM. 
 
@@ -110,12 +109,7 @@ That's it! You've successfully deployed a web server on a Linux VM in Azure.
 
 Depending on your application, you may need to configure additional settings or deploy your web application files to the server.
 
-
-
-
-
-
-### Azure Virtual Machine - Disks
+###  Section 3.9.6: Azure Virtual Machine - Disks
 
 Lab - Adding data disks
 

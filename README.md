@@ -75,7 +75,7 @@ For Nginx, run:
 sudo apt install nginx
 ```
 
-Start and Enable the Web Server:
+### Section 3.9.5: Start and Enable the Web Server:
 
 For Apache, run:
 
@@ -91,7 +91,7 @@ sudo systemctl start nginx
 sudo systemctl enable nginx
 ```
 
-### Section 3.9.5: Open Firewall Ports:
+### Section 3.9.6: Open Firewall Ports:
 
 If you have a firewall enabled, allow traffic on the web server port (default is 80 for HTTP and 443 for HTTPS).
 
@@ -99,7 +99,7 @@ If you have a firewall enabled, allow traffic on the web server port (default is
 sudo ufw allow 80
 ```
 
-### Section 3.9.5: Test the Web Server:
+### Section 3.9.7: Test the Web Server:
 
 Open a web browser and enter the public IP address of your VM. 
 
@@ -109,13 +109,13 @@ That's it! You've successfully deployed a web server on a Linux VM in Azure.
 
 Depending on your application, you may need to configure additional settings or deploy your web application files to the server.
 
-###  Section 3.9.6: Azure Virtual Machine - Disks
+###  Section 3.10: Azure Virtual Machine - Disks
 
 Lab - Adding data disks
 
 What happens when we stop the machine
 
-Azure Disks - Server Side Encryption
+###  Section 3.11: Azure Disks - Server Side Encryption
 
 Lab - Azure Key Vault Service
 
